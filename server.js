@@ -9,7 +9,7 @@ app.use(express.json());
 
 const reservation =[];
 
-app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'view.html')));
+app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'home.html')));
 
 app.get('/api/reservation', (req, res) => res.json(reservation));
 
